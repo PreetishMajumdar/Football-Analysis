@@ -6,4 +6,4 @@ model = YOLO("yolo11n.pt")
 
 # Start tracking objects in a video
 # You can also use live video streams or webcam input
-model.track(source="Datasets\\1.mp4")
+model.predict(source="Datasets\\2.mp4", save=True)
