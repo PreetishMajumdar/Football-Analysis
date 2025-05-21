@@ -7,11 +7,11 @@ from player_ball_assigner import PlayerBallAssigner
 from camera_movement_estimator import CameraMovementEstimator
 from view_transformer import ViewTransformer
 from speed_and_distance_estimator import SpeedAndDistance_Estimator
-
+from tqdm import tqdm #progress bar
 
 def main():
     # Read Video
-    video_frames = VideoUtils.read_video('input_videos/08fd33_4.mp4')
+    video_frames = VideoUtils.read_video('input_videos/4.mp4')
 
     # Initialize Tracker
     tracker = Tracker('models/best.pt')
@@ -46,6 +46,7 @@ def main():
     team_assigner.assign_team_color(video_frames[0], 
                                     tracks['players'][0])
     
+    print("\nAssigning player teams...")
     for frame_num, player_track in enumerate(tracks['players']):
         for player_id, track in player_track.items():
             team = team_assigner.get_player_team(video_frames[frame_num],   
@@ -58,6 +59,9 @@ def main():
     # Assign Ball Aquisition
     player_assigner =PlayerBallAssigner()
     team_ball_control= []
+    
+    print("\nAssigning ball possession...")
+
     for frame_num, player_track in enumerate(tracks['players']):
         ball_bbox = tracks['ball'][frame_num][1]['bbox']
         assigned_player = player_assigner.assign_ball_to_player(player_track, ball_bbox)
@@ -71,6 +75,12 @@ def main():
 
 
     # Draw output 
+    # Draw output
+    print("\nRendering video...")
+    output_video_frames = []
+    for frame in tqdm(video_frames, total=len(video_frames), desc="Drawing Annotations"):
+        output_video_frames.append(frame)  # Just placeholder, will be replaced by annotated frames
+    
     ## Draw object Tracks
     output_video_frames = tracker.draw_annotations(video_frames, tracks,team_ball_control)
 

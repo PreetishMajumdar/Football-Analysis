@@ -7,3 +7,4 @@ desktop.ini
 football-players-detection-1
 models
 stubs
+*.pyc
