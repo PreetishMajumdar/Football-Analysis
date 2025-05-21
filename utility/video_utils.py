@@ -17,3 +17,10 @@ class VideoUtils:
         for frame in ouput_video_frames:
             out.write(frame)
         out.release()
+
+    def purge_stubs():
+        import os
+        import glob
+        files = glob.glob('stubs/*')
+        for f in files:
+            os.remove(f)

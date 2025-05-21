@@ -83,5 +83,9 @@ def main():
     # Save video
     VideoUtils.save_video(output_video_frames, 'output_videos/output_video.avi')
 
+    #purge stubs
+    VideoUtils.purge_stubs('stubs/track_stubs.pkl')   
+    VideoUtils.purge_stubs('stubs/camera_movement_stub.pkl')
+
 if __name__ == '__main__':
     main()
