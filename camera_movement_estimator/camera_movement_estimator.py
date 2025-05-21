@@ -4,7 +4,7 @@ import numpy as np
 import os
 import sys 
 sys.path.append('../')
-from utility import measure_distance,measure_xy_distance
+from utility.bbox_utils import BBoxUtils
 
 class CameraMovementEstimator():
     def __init__(self,frame):
@@ -62,10 +62,10 @@ class CameraMovementEstimator():
                 new_features_point = new.ravel()
                 old_features_point = old.ravel()
 
-                distance = measure_distance(new_features_point,old_features_point)
+                distance = BBoxUtils.measure_distance(new_features_point,old_features_point)
                 if distance>max_distance:
                     max_distance = distance
-                    camera_movement_x,camera_movement_y = measure_xy_distance(old_features_point, new_features_point ) 
+                    camera_movement_x,camera_movement_y = BBoxUtils.measure_xy_distance(old_features_point, new_features_point ) 
             
             if max_distance > self.minimum_distance:
                 camera_movement[frame_num] = [camera_movement_x,camera_movement_y]
