@@ -8,11 +8,9 @@
 - [Technologies Used](#technologies-used)  
 - [Installation](#installation)  
 - [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [Sample Results](#sample-results)  
+- [Project Structure](#project-structure) 
 - [Future Work](#future-work)  
 - [Contributing](#contributing)  
-- [License](#license)  
 - [Contact](#contact)  
 
 ## Overview  
@@ -103,13 +101,7 @@ Football-Analysis-Live/
 └── main.py              # Main entry point  
 ```
 
-## Sample Results
 
-| Feature              | Example Output                 |
-|----------------------|--------------------------------|
-| Player Detection     | ![](demo/player_detection.png) |
-| Pass Network         | ![](demo/pass_network.png)     |
-| Tactical Dashboard   | ![](demo/dashboard.png)        |
 
 ## Future Work
 - Enhance ball tracking accuracy during occlusion  
@@ -121,8 +113,7 @@ Football-Analysis-Live/
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for suggestions, bug fixes, or new features.
 
-## License
-This project is licensed under the MIT License.
+
 
 ## Contact
 For questions, feedback, or collaboration, please reach out via GitHub Issues or connect with me on [LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/preetish-majumdar-75296b211/)).
