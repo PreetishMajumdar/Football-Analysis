@@ -4,8 +4,7 @@
 ## Table of Contents
 - [Overview](#overview)  
 - [Features](#features)  
-- [Demo](#demo)  
-- [Project Architecture](#project-architecture)  
+- [Demo](#demo) 
 - [Technologies Used](#technologies-used)  
 - [Installation](#installation)  
 - [Usage](#usage)  
@@ -32,17 +31,6 @@
 ## Demo
 ![Demo GIF](demo/demo.gif)  
 *System processes a live football match and generates real-time analytics!*
-
-## Project Architecture
-```mermaid
-graph TD
-    A[Live Video Feed] --> B[YOLOv8 Object Detection]
-    B --> C[ByteTrack Multi-Object Tracking]
-    C --> D[Team Assignment (K-means Clustering)]
-    D --> E[Perspective Transformation]
-    E --> F[Analytics Engine]
-    F --> G[Visualization Dashboard]
-```
 
 ## Technologies Used
 - Python 3.x  
