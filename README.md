@@ -14,10 +14,10 @@
 - [Contact](#contact)  
 
 ## Overview  
-**Football Analysis Live** is an end-to-end platform for real-time football match analysis, leveraging state-of-the-art computer vision and deep learning techniques. The system processes live video feeds to detect and track players, referees, and the ball, automatically assigns teams, and generates advanced analytics and visualizations. This project aims to empower coaches, analysts, and fans with actionable insights and tactical data during live matches.
+**Football Analysis Live** is an end-to-end platform for real-time football match analysis, leveraging state-of-the-art computer vision and deep learning techniques. The system processes video to detect and track players, referees, and the ball, automatically assigns teams, and generates advanced analytics and visualizations. This project aims to empower coaches, analysts, and fans with actionable insights and tactical data during live matches.
 
 ## Features
-- **Real-Time Object Detection:** Detects players, referees, goalkeepers, and the ball using YOLOv8.  
+- **Object Detection:** Detects players, referees, goalkeepers, and the ball using YOLOv8.  
 - **Multi-Object Tracking:** Maintains consistent IDs for all entities using ByteTrack.  
 - **Automatic Team Assignment:** Uses clustering algorithms to group players by jersey color.  
 - **Advanced Analytics:** Calculates possession, pass networks, player speeds, distances covered, and expected goals (xG).  
@@ -28,7 +28,7 @@
 
 ## Demo
 ![Demo GIF](demo/demo.gif)  
-*System processes a live football match and generates real-time analytics!*
+*System processes a football match and generates real-time analytics!*
 
 ## Technologies Used
 - Python 3.x  
@@ -104,6 +104,7 @@ Football-Analysis-Live/
 
 
 ## Future Work
+- Add Real-Time footage integration
 - Enhance ball tracking accuracy during occlusion  
 - Add player re-identification across multiple camera angles  
 - Integrate live data feeds from external providers  
