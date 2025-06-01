@@ -1,4 +1,4 @@
-# Football Analysis Live  
+# Football Analysis
 **Real-Time Football Match Analysis with Computer Vision and Deep Learning**
 
 ## Table of Contents
@@ -14,7 +14,7 @@
 - [Contact](#contact)  
 
 ## Overview  
-**Football Analysis Live** is an end-to-end platform for real-time football match analysis, leveraging state-of-the-art computer vision and deep learning techniques. The system processes video to detect and track players, referees, and the ball, automatically assigns teams, and generates advanced analytics and visualizations. This project aims to empower coaches, analysts, and fans with actionable insights and tactical data during live matches.
+**Football Analysis** is an end-to-end platform for real-time football match analysis, leveraging state-of-the-art computer vision and deep learning techniques. The system processes video to detect and track players, referees, and the ball, automatically assigns teams, and generates advanced analytics and visualizations. This project aims to empower coaches, analysts, and fans with actionable insights and tactical data during live matches.
 
 ## Features
 - **Object Detection:** Detects players, referees, goalkeepers, and the ball using YOLOv8.  
@@ -46,8 +46,8 @@
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/anonimity69/Football-Analysis-Live.git
-cd Football-Analysis-Live
+git clone https://github.com/anonimity69/Football-Analysis.git
+cd Football-Analysis
 ```
 
 ### Create a Virtual Environment (Recommended)
